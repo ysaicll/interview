@@ -1,4 +1,5 @@
-package cn.edu.ruc;
+package org.test;
+
 import java.util.*;
 import java.lang.reflect.Array;
 import java.sql.Time;
@@ -31,10 +32,10 @@ public class Solution {
 		  Arrays.sort(time);                                 //具体时间转为int，排序后有序		 
 		  for(int i=0;i<s.length;i++)
 		  {
-			  s[i]=map.get(time[i]);				         //以时间为键值取出map中的原始字符串即为有序
+			  System.out.println(map.get(time[i]));				         //以时间为键值取出map中的原始字符串即为有序
 		  }
 		  
-		  System.out.println(Arrays.toString(s));
+		//  System.out.println(Arrays.toString(s));
 		  System.out.println(map_name.toString());
 	  }   
 public static void main(String[] args) {
